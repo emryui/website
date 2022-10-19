@@ -9,7 +9,7 @@ export const Hero = () => (
     <Image
       src="/swatch.svg"
       layout="fill"
-      className="opacity-30 -z-20"
+      className="opacity-40 -z-20"
       alt="Mesh Gradient Background"
     />
     <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10 h-screen w-screen" />
@@ -19,6 +19,7 @@ export const Hero = () => (
       enter="transition-opacity duration-1000"
       enterFrom="opacity-0"
       enterTo="opacity-100"
+      className="absolute inset-0 h-screen w-screen"
     >
       <video
         className="opacity-30 absolute inset-0 -z-20 h-screen w-screen object-cover"
