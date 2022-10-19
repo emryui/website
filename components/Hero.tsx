@@ -2,6 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 import { BadgeGroup } from "./BadgeGroup";
 import { Subscribe } from "./Subscribe";
+import { Transition } from "@headlessui/react";
 
 export const Hero = () => (
   <section className="relative -mt-20 flex h-screen">
@@ -12,16 +13,24 @@ export const Hero = () => (
       alt="Mesh Gradient Background"
     />
     <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10 h-screen w-screen" />
-    <video
-      className="opacity-30 absolute inset-0 -z-20 h-screen w-screen object-cover"
-      autoPlay
-      muted
-      loop
-      playsInline
-      poster="/blob.jpg"
+    <Transition
+      show={true}
+      appear={true}
+      enter="transition-opacity duration-1000"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
     >
-      <source src="/blob.webm" type="video/webm" />
-    </video>
+      <video
+        className="opacity-30 absolute inset-0 -z-20 h-screen w-screen object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/blob.jpg"
+      >
+        <source src="/blob.webm" type="video/webm" />
+      </video>
+    </Transition>
     <div className="z-10 flex w-full flex-col items-center justify-center gap-y-12">
       <div className="my-6 flex flex-col items-center gap-y-6">
         <div className="flex justify-center">
