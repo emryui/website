@@ -21,7 +21,7 @@ export const Hero = () => (
       enterTo="opacity-30"
       className="absolute inset-0 opacity-0"
     >
-      <video
+      {/* <video
         className="opacity-30 absolute inset-0 -z-20 object-cover"
         autoPlay
         muted
@@ -30,9 +30,9 @@ export const Hero = () => (
         poster="/blob.jpg"
       >
         <source src="/blob.webm" type="video/webm" />
-      </video>
+      </video> */}
     </Transition>
-    <div className="duration-2500 z-10 flex w-full flex-col items-center justify-center gap-y-12">
+    <div className="z-10 flex w-full flex-col items-center justify-center gap-y-12 duration-2500">
       <div className="my-6 flex flex-col items-center gap-y-6">
         <div className="flex justify-center">
           <BadgeGroup
