@@ -44,6 +44,7 @@ export const Hero = () => (
       </div>
       <Subscribe />
     </div>
+    <></>
   </section>
 );
 
