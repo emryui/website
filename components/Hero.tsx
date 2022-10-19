@@ -6,19 +6,19 @@ import { Subscribe } from "./Subscribe";
 export const Hero = () => (
   <section className="relative -mt-20 flex h-screen">
     <Image
-      src="/mesh-gradient.png"
+      src="/Swatch.svg"
       layout="fill"
       className="opacity-30 -z-20"
       alt="Mesh Gradient Background"
     />
-    <div className="backdrop-blur-sm saturate-200 absolute inset-0 -z-10 h-screen w-screen bg-black/50" />
+    <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10 h-screen w-screen" />
     <video
-      className="absolute inset-0 -z-20 h-screen w-screen object-cover opacity-25"
+      className="opacity-30 absolute inset-0 -z-20 h-screen w-screen object-cover"
       autoPlay
       muted
       loop
       playsInline
-      poster="/blob.png"
+      poster="/blob.jpg"
     >
       <source src="/blob.webm" type="video/webm" />
     </video>
