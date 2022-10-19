@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        2500: "2500ms",
+      },
       boxShadow: {
         xs: "0px 1px 2px rgba(16, 24, 40, 0.05);",
       },

@@ -12,17 +12,17 @@ export const Hero = () => (
       className="opacity-40 -z-20"
       alt="Mesh Gradient Background"
     />
-    <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10 h-screen w-screen" />
+    <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10" />
     <Transition
       show={true}
       appear={true}
-      enter="transition-opacity duration-1000"
+      enter="transition-opacity duration-2500"
       enterFrom="opacity-0"
-      enterTo="opacity-100"
-      className="absolute inset-0 h-screen w-screen"
+      enterTo="opacity-30"
+      className="absolute inset-0 opacity-0"
     >
       <video
-        className="opacity-30 absolute inset-0 -z-20 h-screen w-screen object-cover"
+        className="opacity-30 absolute inset-0 -z-20 object-cover"
         autoPlay
         muted
         loop
@@ -32,7 +32,7 @@ export const Hero = () => (
         <source src="/blob.webm" type="video/webm" />
       </video>
     </Transition>
-    <div className="z-10 flex w-full flex-col items-center justify-center gap-y-12">
+    <div className="duration-2500 z-10 flex w-full flex-col items-center justify-center gap-y-12">
       <div className="my-6 flex flex-col items-center gap-y-6">
         <div className="flex justify-center">
           <BadgeGroup
