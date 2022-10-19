@@ -6,7 +6,7 @@ import { Subscribe } from "./Subscribe";
 export const Hero = () => (
   <section className="relative -mt-20 flex h-screen">
     <Image
-      src="/Swatch.svg"
+      src="/swatch.svg"
       layout="fill"
       className="opacity-30 -z-20"
       alt="Mesh Gradient Background"
