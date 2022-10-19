@@ -9,6 +9,7 @@ export const Hero = () => (
       src="/mesh-gradient.png"
       layout="fill"
       className="opacity-30 -z-20"
+      alt="Mesh Gradient Background"
     />
     <div className="backdrop-blur-sm saturate-200 absolute inset-0 -z-10 h-screen w-screen bg-black/50" />
     <video
@@ -44,7 +45,6 @@ export const Hero = () => (
       </div>
       <Subscribe />
     </div>
-    <></>
   </section>
 );
 

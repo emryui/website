@@ -9,7 +9,7 @@ mailchimp.setConfig({
 const audienceID = process.env.MAILCHIMP_AUDIENCE_ID;
 if (!audienceID) throw new Error("Mailchimp Audience ID missing");
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const subscribe = async (req: NextApiRequest, res: NextApiResponse) => {
   const { email } = req.body;
 
   if (!email) {
@@ -29,3 +29,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       .json({ error: error instanceof Error ? error.message : String(error) });
   }
 };
+
+export default subscribe;
