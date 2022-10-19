@@ -74,8 +74,9 @@ export const Subscribe = () => {
         Success!
       </h2>
       <p className="text-center text-md font-normal text-gray-400 antialiased">
-        We are busy polishing our first template. We&aposll be in touch as soon
-        as it&aposs ready for production. If you can&apost wait send an email to{" "}
+        We are busy polishing our first template. We&apos;ll be in touch as soon
+        as it&apos;s ready for production. If you can&apos;t wait send an email
+        to{" "}
         <a
           className="text-gray-500 transition-colors duration-150 hover:text-gray-300"
           href="mailto:emryui@proton.me?subject=Welcome"
