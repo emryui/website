@@ -20,10 +20,10 @@ export const BadgeGroup = (props: BadgeGroupProps) => {
       onClick={onClick}
       className="pr-2.5 flex cursor-pointer items-center gap-x-3 self-start rounded-2xl bg-primary-50 py-1 pl-1"
     >
-      <div className="px-2.5 py-0.5 rounded-2xl bg-white text-sm font-medium text-primary-700 antialiased">
+      <div className="sm:px-2.5 py-0.5 rounded-2xl bg-white px-2 text-xs font-medium text-primary-700 antialiased sm:text-sm">
         {badgeText}
       </div>
-      <div className="flex items-center gap-x-1 text-sm font-medium text-primary-700 antialiased">
+      <div className="flex items-center gap-x-1 text-xs font-medium text-primary-700 antialiased sm:text-sm">
         {message}{" "}
         {showIcon && <ArrowRight className="h-4 w-4 text-primary-500" />}
       </div>

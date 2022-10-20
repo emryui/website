@@ -34,7 +34,10 @@ export const Subscribe = () => {
 
   if (!success) {
     return (
-      <form onSubmit={subscribe} className="flex justify-center gap-x-3">
+      <form
+        onSubmit={subscribe}
+        className="flex items-center justify-center gap-x-3"
+      >
         <div>
           <label htmlFor="email" className="sr-only">
             Email
@@ -51,12 +54,22 @@ export const Subscribe = () => {
               ref={inputEl}
               required
             />
-            <div className="pl-3 text-xs font-normal text-error-500 antialiased">
-              {message}
-            </div>
+            {message.length > 0 && (
+              <div className="pl-3 text-xs font-normal text-error-500 antialiased">
+                {message}
+              </div>
+            )}
           </div>
         </div>
-        <div>
+        <div className="hidden sm:block">
+          <Button
+            type="submit"
+            size="2xl"
+            hierarchy="primary"
+            label="Notify me"
+          />
+        </div>
+        <div className="block sm:hidden">
           <Button
             type="submit"
             size="2xl"

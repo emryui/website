@@ -45,12 +45,12 @@ export const Hero = () => {
             poster="/blob.jpg"
             onCanPlayThrough={videoLoaded}
           >
-            <source src="/blob.webm" type="video/webm" />
+            <source src="/blob.mp4" type="video/mp4" />
           </video>
         )}
       </Transition>
-      <div className="z-10 flex w-full flex-col items-center justify-center gap-y-12 duration-2500">
-        <div className="my-6 flex flex-col items-center gap-y-6">
+      <div className="z-10 flex w-full flex-col items-center justify-center gap-y-6 duration-2500 sm:gap-y-12">
+        <div className="my-6 flex flex-col items-center gap-y-6 p-6 sm:p-0">
           <div className="flex justify-center">
             <BadgeGroup
               badgeText="Coming soon"
@@ -58,13 +58,13 @@ export const Hero = () => {
               onClick={() => console.log("Badge click")}
             />
           </div>
-          <h1 className="bg-clip-text text-center text-display-xl font-semibold text-white antialiased">
+          <h1 className="bg-clip-text text-center text-display-lg font-semibold text-white antialiased sm:text-display-xl">
             <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-primary-700 bg-clip-text text-transparent">
               Supercharge
             </span>{" "}
             your frontend development
           </h1>
-          <p className="max-w-screen-md text-center text-xl font-normal text-gray-400 antialiased">
+          <p className="max-w-screen-md text-center text-md font-normal text-gray-400 antialiased sm:text-xl">
             Emry UI is a stunning set of UI components and templates crafted in
             Tailwind. Helping high performing teams build gorgeous, accessible
             and semantic UI faster.
