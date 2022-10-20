@@ -16,7 +16,7 @@ export default function Hero() {
       <Image
         src="/swatch.svg"
         layout="fill"
-        className="opacity-40 -z-20"
+        className="opacity-40 hidden dark:block"
         alt="Mesh Gradient Background"
       />
       <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10" />
@@ -47,16 +47,19 @@ export default function Hero() {
             <BadgeGroup
               badgeText="Coming soon"
               message="Sign up to get 30% off at launch"
-              onClick={() => console.log("Badge click")}
+              onClick={() => {
+                const input = document.getElementById("email");
+                input?.focus();
+              }}
             />
           </div>
-          <h1 className="bg-clip-text text-center text-display-lg font-semibold text-white antialiased sm:text-display-xl">
+          <h1 className="bg-clip-text text-center text-display-lg font-semibold text-gray-900 antialiased dark:text-white sm:text-display-xl">
             <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-primary-700 bg-clip-text text-transparent">
               Supercharge
             </span>{" "}
             your frontend development
           </h1>
-          <p className="max-w-screen-md text-center text-md font-normal text-gray-400 antialiased sm:text-xl">
+          <p className="max-w-screen-md text-center text-md font-normal text-gray-900 antialiased dark:text-gray-400 sm:text-xl">
             Emry UI is a stunning set of UI components and templates crafted in
             Tailwind. Helping high performing teams build gorgeous, accessible
             and semantic UI faster.

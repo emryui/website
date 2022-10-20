@@ -47,8 +47,10 @@ export const Subscribe = () => {
               type="email"
               name="email"
               id="email"
-              className={`focus:ring-primary-500 bg-black/80 backdrop-blur border-white/30 block w-full rounded-md py-4 text-sm ${
-                message.length > 0 ? "text-error-500" : "text-white"
+              className={`focus:ring-primary-500 dark:bg-black/80 backdrop-blur dark:border-white/30 block w-full rounded-md border-gray-300 py-4 text-sm ${
+                message.length > 0
+                  ? "text-error-500"
+                  : "text-gray-900 dark:text-white"
               } shadow-sm transition-all duration-150 focus:border-primary-500`}
               placeholder="you@example.com"
               ref={inputEl}
@@ -61,22 +63,12 @@ export const Subscribe = () => {
             )}
           </div>
         </div>
-        <div className="hidden sm:block">
-          <Button
-            type="submit"
-            size="2xl"
-            hierarchy="primary"
-            label="Notify me"
-          />
-        </div>
-        <div className="block sm:hidden">
-          <Button
-            type="submit"
-            size="2xl"
-            hierarchy="primary"
-            label="Notify me"
-          />
-        </div>
+        <Button
+          type="submit"
+          size="2xl"
+          hierarchy="primary"
+          label="Notify me"
+        />
       </form>
     );
   }
