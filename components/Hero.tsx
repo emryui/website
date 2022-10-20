@@ -26,11 +26,11 @@ export default function Hero() {
         enter="transition-opacity duration-2500"
         enterFrom="opacity-0"
         enterTo="opacity-30"
-        className="absolute inset-0 opacity-0"
+        className="absolute inset-0 flex flex-col items-center justify-center opacity-0"
       >
         {showVideo && (
           <video
-            className="sm:opacity-30 absolute -z-20 flex flex-col items-center justify-center object-cover"
+            className="sm:opacity-30 absolute -z-20 object-cover"
             autoPlay
             muted
             loop
