@@ -26,7 +26,7 @@ export default function Hero() {
         enter="transition-opacity duration-2500"
         enterFrom="opacity-0"
         enterTo="opacity-30"
-        className="absolute inset-0 flex flex-col items-center justify-center opacity-0"
+        className="absolute inset-0 hidden flex-col items-center justify-center opacity-0 sm:flex"
       >
         {showVideo && (
           <video
