@@ -37,7 +37,7 @@ export const Hero = () => {
           <video
             className={`${
               isVideoLoaded ? "block" : "hidden"
-            } opacity-30 absolute inset-0 -z-20 object-cover`}
+            } sm:opacity-30 absolute -z-20 flex flex-col items-center justify-center object-cover`}
             autoPlay
             muted
             loop
