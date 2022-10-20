@@ -82,11 +82,11 @@ export const Subscribe = () => {
   }
 
   return (
-    <div className="flex max-w-screen-sm flex-col gap-y-2">
+    <div className="flex max-w-screen-sm flex-col gap-y-2 p-6 sm:p-0">
       <h2 className="text-center text-display-xs font-semibold text-white antialiased">
         Success!
       </h2>
-      <p className="text-center text-md font-normal text-gray-400 antialiased">
+      <p className="text-center text-sm font-normal text-gray-400 antialiased sm:text-md">
         We are busy polishing our first template. We&apos;ll be in touch as soon
         as it&apos;s ready for production. If you can&apos;t wait send an email
         to{" "}
