@@ -1,8 +1,17 @@
+import dynamic from "next/dynamic";
 import type { NextPage } from "next";
-import { Hero } from "../components/Hero";
+import { Suspense } from "react";
+
+const DynamicHero = dynamic(() => import("../components/Hero"), {
+  suspense: true,
+});
 
 const Home: NextPage = () => {
-  return <Hero />;
+  return (
+    <Suspense fallback={`Loading...`}>
+      <DynamicHero />
+    </Suspense>
+  );
 };
 
 export default Home;

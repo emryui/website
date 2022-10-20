@@ -4,17 +4,12 @@ import { BadgeGroup } from "./BadgeGroup";
 import { Subscribe } from "./Subscribe";
 import { Transition } from "@headlessui/react";
 
-export const Hero = () => {
+export default function Hero() {
   const [showVideo, setShowVideo] = useState<boolean>(false);
-  const [isVideoLoaded, setIsVideoLoaded] = useState<boolean>(false);
 
   useEffect(() => {
     setShowVideo(true);
   }, []);
-
-  const videoLoaded = () => {
-    setIsVideoLoaded(true);
-  };
 
   return (
     <section className="relative -mt-20 flex h-screen">
@@ -35,15 +30,12 @@ export const Hero = () => {
       >
         {showVideo && (
           <video
-            className={`${
-              isVideoLoaded ? "block" : "hidden"
-            } sm:opacity-30 absolute -z-20 flex flex-col items-center justify-center object-cover`}
+            className="sm:opacity-30 absolute -z-20 flex flex-col items-center justify-center object-cover"
             autoPlay
             muted
             loop
             playsInline
             poster="/blob.jpg"
-            onCanPlayThrough={videoLoaded}
           >
             <source src="/blob.mp4" type="video/mp4" />
           </video>
@@ -74,6 +66,6 @@ export const Hero = () => {
       </div>
     </section>
   );
-};
+}
 
 Hero.displayName = "Hero section";
