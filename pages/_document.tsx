@@ -12,7 +12,7 @@ export default function Document() {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-H0LEL524QT"
         />
-        <Script>
+        <Script id="gtag-script">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
