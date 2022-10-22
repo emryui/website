@@ -20,6 +20,7 @@ export const Header = () => (
     <div className="flex items-center gap-x-3">
       <Link href="https://github.com/emryui">
         <a
+          aria-label="Github"
           target="_blank"
           className="text-gray-400 transition-colors duration-200 hover:text-primary"
         >
@@ -28,6 +29,7 @@ export const Header = () => (
       </Link>
       <Link href="https://twitter.com/emry_ui">
         <a
+          aria-label="Twitter"
           target="_blank"
           className="text-gray-400 transition-colors duration-200 hover:text-primary"
         >
