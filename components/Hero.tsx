@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex h-[calc(100vh-4rem)] sm:h-[calc(100vh-5rem)]">
+    <section className="relative flex h-[calc(90vh-4rem)] sm:h-[calc(100vh-5rem)]">
       <Image
         src="/swatch.svg"
         layout="fill"
