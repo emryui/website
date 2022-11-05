@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import { LocalBusinessJsonLd } from "next-seo";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
         sameAs={["https://github.com/emryui"]}
       />
+      <Analytics />
       <Component {...pageProps} />
     </Layout>
   );
