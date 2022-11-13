@@ -11,7 +11,7 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
       <Head>
-        <title>Emry UI</title>
+        <title>Emry UI - Supercharge your frontend development</title>
         <meta
           name="description"
           content="Emry UI is a stunning set of UI components and templates crafted in
@@ -92,7 +92,7 @@ export default function Layout(props: LayoutProps) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Header />
-      <div className="border-b border-b-white/10 w-full" />
+      <div className="w-full border-b border-b-white/10" />
       <main>{children}</main>
       <footer className="relative z-50 mx-auto w-screen">
         <div className="container mx-auto flex h-12 items-center justify-center text-xs font-normal text-gray-400">
