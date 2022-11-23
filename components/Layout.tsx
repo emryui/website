@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { Header } from "./Header";
+import { GitHub, Twitter } from "react-feather";
 
 interface LayoutProps {
   children: ReactNode;
@@ -95,8 +97,26 @@ export default function Layout(props: LayoutProps) {
       <div className="w-full border-b border-b-white/10" />
       <main>{children}</main>
       <footer className="relative z-50 mx-auto w-screen">
-        <div className="container mx-auto flex h-12 items-center justify-center text-xs font-normal text-gray-400">
-          © Emry UI {new Date().getFullYear()}.
+        <div className="container mx-auto flex h-12 items-center justify-center gap-x-3 text-xs font-normal text-gray-400">
+          <span>© Emry UI {new Date().getFullYear()}.</span>
+          <Link href="https://github.com/emryui">
+            <a
+              aria-label="Github"
+              target="_blank"
+              className="text-gray-400 transition-colors duration-200 hover:text-primary"
+            >
+              <GitHub className="h-5 w-5" />
+            </a>
+          </Link>
+          <Link href="https://twitter.com/emry_ui">
+            <a
+              aria-label="Twitter"
+              target="_blank"
+              className="text-gray-400 transition-colors duration-200 hover:text-primary"
+            >
+              <Twitter className="h-5 w-5" />
+            </a>
+          </Link>
         </div>
       </footer>
     </>

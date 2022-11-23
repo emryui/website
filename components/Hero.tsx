@@ -16,10 +16,10 @@ export default function Hero() {
       <Image
         src="/swatch.svg"
         layout="fill"
-        className="opacity-40 hidden dark:block"
+        className="hidden opacity-40 dark:block"
         alt="Mesh Gradient Background"
       />
-      <div className="backdrop-blur saturate-200 bg-black/40 absolute inset-0 -z-10" />
+      <div className="absolute inset-0 -z-10 bg-black/40 saturate-200 backdrop-blur" />
       <Transition
         show={true}
         appear={true}
@@ -30,7 +30,7 @@ export default function Hero() {
       >
         {showVideo && (
           <video
-            className="sm:opacity-30 absolute -z-20 object-cover"
+            className="absolute -z-20 object-cover sm:opacity-30"
             autoPlay
             muted
             loop
@@ -46,7 +46,7 @@ export default function Hero() {
           <div className="flex justify-center">
             <BadgeGroup
               badgeText="Coming soon"
-              message="Sign up to get 30% off at launch"
+              message="Register to get 30% off at launch"
               onClick={() => {
                 const input = document.getElementById("email");
                 input?.focus();
